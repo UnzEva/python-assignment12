@@ -11,6 +11,9 @@ countries = df['country'].unique()
 # Initialize the Dash app
 app = Dash(__name__)
 
+# Deployment
+server = app.server
+
 # Define the layout
 app.layout = html.Div([
     html.H1("GDP per Capita Over Time by Country", 
